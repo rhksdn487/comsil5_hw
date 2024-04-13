@@ -14,6 +14,7 @@ int main() {
 
     printf("branch2에서 추가한 것 ");
 
+    printf("branch3에서 추가한것 ");
 
     printf("Enter the number of alphabets: ");
     scanf("%d", &size);
