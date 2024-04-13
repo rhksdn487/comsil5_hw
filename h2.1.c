@@ -9,12 +9,14 @@ int main() {
     
     int size;
 
-    printf("branch1¿¡¼­ Ãß°¡ÇÑ °Í ");
+    printf("branch1ì—ì„œ ì¶”ê°€í•œ ê²ƒì…ë‹ˆë‹¤.");
+
+    printf("branch1ì—ì„œ ì¶”ê°€í•œ ê²ƒ ");
 
 
-    printf("branch2¿¡¼­ Ãß°¡ÇÑ °Í ");
+    printf("branch2ì—ì„œ ì¶”ê°€í•œ ê²ƒ ");
 
-    printf("branch3¿¡¼­ Ãß°¡ÇÑ°Í ");
+    printf("branch3ì—ì„œ ì¶”ê°€í•œê²ƒ ");
 
     printf("Enter the number of alphabets: ");
     scanf("%d", &size);
@@ -22,7 +24,7 @@ int main() {
     char* L = (char*)malloc(size * sizeof(char));
     char* A = (char*)malloc(size * sizeof(char));
     for (int i = 0; i < size; i++) {
-        A[i] = 'a' + i; // ¾ËÆÄºª ¼ø¼­´ë·Î ÀúÀå
+        A[i] = 'a' + i; // ì•ŒíŒŒë²³ ìˆœì„œëŒ€ë¡œ ì €ì¥
     }
 
     for (int i = 0; i <= size; i++) {
@@ -49,14 +51,14 @@ void subset(int n,int subsetSize,char *A,char *L,int size) {
 
 void printSubset(int subsetSize,char* A,char *L,int size){
     printf("{");
-    int printed = 0; // printed º¯¼ö Ãß°¡
+    int printed = 0; // printed ë³€ìˆ˜ ì¶”ê°€
     for (int i = 0; i < size; i++) {
         if (L[i] == 1) {
-            if (printed > 0) { // ¿ä¼Ò »çÀÌ¿¡ °ø¹é Ãâ·Â
+            if (printed > 0) { // ìš”ì†Œ ì‚¬ì´ì— ê³µë°± ì¶œë ¥
                 printf(" ");
             }
             printf("%c", A[i]);
-            printed++; // Ãâ·ÂµÈ ¿ä¼ÒÀÇ ¼ö Áõ°¡
+            printed++; // ì¶œë ¥ëœ ìš”ì†Œì˜ ìˆ˜ ì¦ê°€
         }
     }
     printf("} ");
