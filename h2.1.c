@@ -8,7 +8,7 @@ void printSubset(int subsetSize,char *A,char *L,int size);
 int main() {
     
     int size;
-    printf("branch1에서 추가한 것 ");
+    printf("branch1에서 추가한 것입니다.");
     printf("Enter the number of alphabets: ");
     scanf("%d", &size);
 
